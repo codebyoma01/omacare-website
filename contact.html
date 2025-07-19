@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Omacare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Omacare Logo">
+      </a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="scroll-top" title="Back to Top">&#8679;</button>
+
+
+  <section class="hero contact-hero">
+    <div class="container hero-content" data-aos="fade-down">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for inquiries, appointments, or emergency services.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <h3>Get In Touch</h3>
+        <p><strong>Phone:</strong> 09059398498</p>
+        <p><strong>Email:</strong> omacare@gmail.com</p>
+        <p><strong>Address:</strong> 12 Wellness Avenue, Wuse Zone 6, Abuja</p>
+        <div class="map-placeholder">[Map Location Placeholder]</div>
+      </div>
+
+      
+      <form id="contact-form" action="https://formspree.io/f/mvgqzgaa" method="POST" data-aos="fade-left">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+
+      
+        <p id="success-msg" style="display:none; color: green; margin-top: 1rem;">Message sent successfully!</p>
+        <p id="error-msg" style="display:none; color: red; margin-top: 1rem;">Oops! Something went wrong.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Omacare Medical Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      const successMsg = document.getElementById("success-msg");
+      const errorMsg = document.getElementById("error-msg");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+        .then((response) => {
+          if (response.ok) {
+            successMsg.style.display = "block";
+            errorMsg.style.display = "none";
+            form.reset();
+          } else {
+            throw new Error("Form submission failed.");
+          }
+        })
+        .catch(() => {
+          successMsg.style.display = "none";
+          errorMsg.style.display = "block";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

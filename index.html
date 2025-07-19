@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omacare Medical Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Omacare Logo">
+      </a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <button id="scroll-top" title="Back to top">&#8679;</button>
+
+  <section class="hero hero-split">
+    <div class="container hero-grid">
+      <div class="hero-text" data-aos="fade-right">
+        <h2>Your Health, Our Priority</h2>
+        <p>Welcome to Omacare Medical Center  a modern facility in Abuja delivering quality healthcare with compassion and professionalism.</p>
+        <a href="booking.html" class="btn">Book Appointment</a>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <img src="https://media.istockphoto.com/id/1970011479/photo/young-indian-doctor-woman-showing-online-service-for-practitioners.jpg?s=612x612&w=0&k=20&c=L5x8NuT-SQAi3Bly08fqsHN3V3DTwC2mJE8ebVIvz_Y=" alt="Healthcare professionals">
+      </div>
+    </div>
+  </section>
+
+  <section class="services-preview">
+    <div class="container">
+      <h3 data-aos="fade-up">Our Services</h3>
+      <div class="services-grid">
+        <div class="service-card" data-aos="zoom-in">
+          <h4>General Consultation</h4>
+          <p>Expert care and personalized treatment for your everyday health needs.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <h4>Laboratory Services</h4>
+          <p>Accurate diagnostics with modern lab equipment and fast results.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <h4>Emergency Care</h4>
+          <p>24/7 emergency response with highly trained professionals.</p>
+        </div>
+      </div>
+      <a href="services.html" class="btn secondary" data-aos="fade-up">View All Services</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h3 data-aos="fade-up">What Our Patients Say</h3>
+      <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>"Omacare gave me the best service ever. The doctors truly care!"</p>
+            <h4>- Mrs. Amina B.</h4>
+          </div>
+          <div class="swiper-slide">
+            <p>"Top-notch facilities and fast diagnosis. Highly recommended!"</p>
+            <h4>- John K.</h4>
+          </div>
+          <div class="swiper-slide">
+            <p>"Very professional and friendly. Booking was smooth."</p>
+            <h4>- Tunde A.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-banner">
+    <div class="container">
+      <h3>Need Help? Contact Us</h3>
+      <p>Call us at <strong>09059398498</strong> or email <strong>omacare@gmail.com</strong></p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Omacare Medical Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.testimonial-slider', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      effect: 'fade'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Doctors | Omacare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Omacare Logo">
+      </a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="scroll-top" title="Back to Top">&#8679;</button>
+
+  <section class="hero doctors-hero">
+    <div class="container hero-content" data-aos="fade-down">
+      <h2>Meet Our Medical Team</h2>
+      <p>Skilled, compassionate, and committed to your health and well being.</p>
+    </div>
+  </section>
+
+  <section class="doctors-section">
+    <div class="container doctors-grid">
+      <div class="doctor-card" data-aos="zoom-in">
+        <img src="https://media.istockphoto.com/id/2111791576/photo/happy-to-be-helping-people.jpg?s=1024x1024&w=is&k=20&c=8imnS_Tko5jo4_Q0y2oWH9PaVjvYKc-bgNJKJxyoH7k=" alt="Dr. Jane">
+        <h4>Dr. Jane Obi</h4>
+        <p>Consultant Physician</p>
+      </div>
+      <div class="doctor-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1672655412906-8e10ba6ee373?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFsZSUyMGRvY3RvciUyMG5pZ2VyaWFufGVufDB8fDB8fHww" alt="Dr. Emeka">
+        <h4>Dr. Emeka Ibe</h4>
+        <p>Pediatric Specialist</p>
+      </div>
+      <div class="doctor-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://plus.unsplash.com/premium_photo-1661690014479-0b3eeee9191a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZmVtYWxlJTIwJTIwZG9jdG9yJTIwbmlnZXJpYW58ZW58MHx8MHx8fDA%3D" alt="Dr. Grace">
+        <h4>Dr. Grace Eze</h4>
+        <p>Dentist</p>
+      </div>
+    </div>
+  </section>
+  <section class="team-section">
+    <div class="container">
+      <h2 data-aos="fade-up">Our Dedicated Team</h2>
+      <div class="doctors-grid">
+        <div class="doctor-card" data-aos="fade-up">
+          <img src="https://media.istockphoto.com/id/2208105064/photo/black-healthcare-worker-in-scrubs-discussing-medical-documents-with-patient-in-clinic-corridor.webp?a=1&b=1&s=612x612&w=0&k=20&c=x02w086kvF30F9peUKDExvBoCvLz7vUtcMOMdSvtaH8=" alt="Dr. Femi">
+          <h4>Dr. Femi Adebayo</h4>
+          <p>Chief Medical Officer</p>
+        </div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://media.istockphoto.com/id/2204477147/photo/black-woman-doctor-and-typing-with-tablet-at-hospital-for-research-laboratory-results-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=6I7zUIiifRbCu2jDcPMv29y7z3BT48HqIgoh_gTinnU=" alt="Dr. Blessing">
+          <h4>Dr. Blessing Udo</h4>
+          <p>Surgeon</p>
+        </div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://media.istockphoto.com/id/2158239732/photo/portrait-of-female-nurse-at-medical-clinic.webp?a=1&b=1&s=612x612&w=0&k=20&c=C4IuzsUqdljKQxz1rLsha45kbfKcjkRPOG-O72VLmtI=" alt="Nurse Grace">
+          <h4>Nurse Grace Umeh</h4>
+          <p>Head Nurse</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Omacare Medical Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>

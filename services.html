@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Omacare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Omacare Logo">
+      </a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+   
+  <button id="scroll-top" title="Back to Top">&#8679;</button>
+
+
+  <section class="hero services-hero">
+    <div class="container hero-content" data-aos="fade-down">
+      <h2>Our Medical Services</h2>
+      <p>Explore a wide range of patient-centered healthcare solutions tailored to your needs.</p>
+    </div>
+  </section>
+
+  <section class="services-full">
+    <div class="container services-flex">
+      <div class="services-grid" data-aos="fade-right">
+        <div class="service-card">
+          <h4>General Consultation</h4>
+          <p>Expert medical consultations for patients of all ages and health conditions.</p>
+        </div>
+        <div class="service-card">
+          <h4>Pediatrics</h4>
+          <p>Dedicated child health services for infants, children, and teenagers.</p>
+        </div>
+        <div class="service-card">
+          <h4>Dental Care</h4>
+          <p>Professional dental treatments including checkups, cleaning, and oral surgery.</p>
+        </div>
+        <div class="service-card">
+          <h4>Laboratory Tests</h4>
+          <p>Modern lab diagnostics with accurate and timely results.</p>
+        </div>
+        <div class="service-card">
+          <h4>Emergency Services</h4>
+          <p>24/7 emergency support for urgent and life-threatening medical conditions.</p>
+        </div>
+        <div class="service-card">
+          <h4>Pharmacy</h4>
+          <p>On-site pharmacy for quick access to prescribed medications.</p>
+        </div>
+      </div>
+
+      <div class="service-image" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1580281780460-82d277b0e3f8?w=900&auto=format&fit=crop&q=60" alt="Doctors providing medical care" />
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+      <h2 data-aos="zoom-in">Affordable Healthcare Plans</h2>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-right">
+          <h4>Basic</h4>
+          <p><strong>₦5,000 / visit</strong></p>
+          <p>General consultation and vitals check</p>
+        </div>
+        <div class="service-card" data-aos="fade-up">
+          <h4>Standard</h4>
+          <p><strong>₦15,000 / package</strong></p>
+          <p>Includes basic tests + consultation</p>
+        </div>
+        <div class="service-card" data-aos="fade-left">
+          <h4>Premium</h4>
+          <p><strong>₦30,000 / month</strong></p>
+          <p>Priority care + home visits</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Omacare Medical Center. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
